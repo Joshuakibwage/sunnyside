@@ -90,7 +90,9 @@ const Navbar = () => {
             <ul className="flex flex-col space-y-2">
               {
                 navLinks.map((link, index) => (
-                  <li key={index} className="font-bold text-l text-grayish-blue hover:text-black hover:bg-White py-1 px-3 rounded-full transition-all delay-200 ease-in-out">
+                  <li key={index} 
+                  onClick={toggleNav}
+                  className="font-bold text-l text-grayish-blue hover:text-black hover:bg-White py-1 px-3 rounded-full transition-all delay-200 ease-in-out">
                     <NavLink to={link.path} 
                     className={({isActive, isPending}) => (
                       isActive
