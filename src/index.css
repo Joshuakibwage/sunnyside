@@ -5,6 +5,11 @@
 @import "tailwindcss";
 
 
+.active {
+  @apply py-1.5 px-3 rounded-full md:bg-white/40 bg-very-yellow 
+}
+
+
 @theme {
 
   /* Primary */
@@ -26,4 +31,23 @@
   /* fonts */
   --font-barlow: "Barlow", sans-serif;
   --font-fraunces: "Fraunces", sans-serif;
+}
+
+/* TRIANGLE */
+/* .element {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 27px 9px;
+  border-color: transparent transparent #FFFFFF transparent;
+} */
+
+.element::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 27px 9px;
+  border-color: transparent transparent #FFFFFF transparent;
 }
